@@ -3,7 +3,7 @@ from rest_framework import viewsets
 # Torrent API
 from tpb import TPB
 from tpb import CATEGORIES, ORDERS
-from serializers import TorrentSerializer
+from api.torrents.serializers import TorrentSerializer
 
 t = TPB('https://thepiratebay.org')
 
