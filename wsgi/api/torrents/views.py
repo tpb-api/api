@@ -5,7 +5,7 @@ from tpb import TPB
 from tpb import CATEGORIES, ORDERS
 from api.torrents.serializers import TorrentSerializer
 
-t = TPB('https://thepiratebay.org')
+t = TPB('https://thepiratebay.se')
 
 # import the logging library
 import logging
