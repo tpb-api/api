@@ -12,6 +12,7 @@ sys.path.append(os.path.join('wsgi', 'api'))
 if __name__ == '__main__':
     ip   = 'localhost'
     port = 8051
+    sys.path.append(os.path.join('wsgi', ''))
     zapp = imp.load_source('application', 'wsgi/application')
 
     from wsgiref.simple_server import make_server
