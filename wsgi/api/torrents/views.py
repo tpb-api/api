@@ -56,7 +56,7 @@ class Torrent(object):
         resp_parsed = json.loads(response.read().decode("utf-8"), object_hook=object_decoder)
         if resp_parsed:
             self.clean_title = resp_parsed[0].title
-            self.imdb_id = resp_parsed[0].id
+            self.imdb_id = u''.join(['tt',resp_parsed[0].id])
 
 class TorrentViewSet(viewsets.ReadOnlyModelViewSet):
     """
